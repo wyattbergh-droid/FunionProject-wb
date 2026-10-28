@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+Mobile-First Design
+*/
+
+body {
+    background-color: #f9f9f9;
+    color: #232222;
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    border-left: #848484c2 solid 1px;
+    border-right: #848484c2 solid 1px;
+}
+header {
+    text-align: center;
+    border-bottom: #848484c2 solid 1px;
+    padding: 10px;
+}
+h1 {
+    font-size: 48px;
+    display: inline-block;
+    position:relative;
+    text-align: center;
+    margin-top: 20px;
+}
+#tagline {
+    font-style: italic;
+    padding-bottom: 10px;
+}
+nav {
+    font-size: 30px;
+    display: inline-block;
+}
+h2 {
+    margin: 10px;
+    text-align: center;
+    
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 10px #232323;
+    margin-top: 50px 10px 10px;
+}
+
+section {
+    border-bottom: #848484c2 solid 1px;
+}
+
+
+figure {
+    align-items: center;
+    margin: 20px 10px 10px;
+}
+figcaption {
+    text-align: center;
+}
+
+p {
+    margin: 5px 5px 5px 5px;
+    text-indent: 2%;
+}
+
+.story-list {
+    margin-left: 10%
+}
+footer {
+    text-align: center;
+}
+
+#footercap {
+    font-style: italic;
+}
+
+a {
+    text-decoration-line: none;
+    background-color: #232222b1;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+a:after{
+    color: black;
+}
+a:hover {
+    font-size: larger;
+    color: blue;
+    
+}
+
+@media (min-width: 600px) {
+    
+
+}
