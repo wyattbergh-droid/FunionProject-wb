@@ -17,37 +17,46 @@ body {
     border-left: #848484c2 solid 1px;
     border-right: #848484c2 solid 1px;
 }
+
 header {
     text-align: center;
     border-bottom: #848484c2 solid 1px;
     padding: 10px;
 }
+
 h1 {
     font-size: 48px;
     display: inline-block;
-    position:relative;
+    position: relative;
     text-align: center;
     margin-top: 20px;
 }
+
 #tagline {
     font-style: italic;
     padding-bottom: 10px;
 }
+
 nav {
     font-size: 30px;
     display: inline-block;
 }
+
+li {
+    margin: 5px;
+}
+
 h2 {
     margin: 10px;
     text-align: center;
-    
+
 }
 
 img {
     max-width: 100%;
     height: auto;
     box-shadow: 5px 5px 10px #232323;
-    margin-top: 50px 10px 10px;
+    margin: 10px 10px 10px;
 }
 
 section {
@@ -59,6 +68,7 @@ figure {
     align-items: center;
     margin: 20px 10px 10px;
 }
+
 figcaption {
     text-align: center;
 }
@@ -71,6 +81,7 @@ p {
 .story-list {
     margin-left: 10%
 }
+
 footer {
     text-align: center;
 }
@@ -87,16 +98,87 @@ a {
     font-size: 16px;
 }
 
-a:after{
+a:after {
     color: black;
 }
+
 a:hover {
-    font-size: larger;
+    font-size: 25px;
     color: blue;
-    
+
 }
 
-@media (min-width: 600px) {
-    
+nav input {
+    display: none;
+}
+
+nav input:checked~label span:first-child {
+    display: none;
+}
+
+nav input:not(:checked)~label span:last-child {
+    display: none
+}
+
+nav input:checked~ul {
+    width: 400px;
+    height: 120px;
+}
+
+nav ul {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (min-width: 576px) {
+    section {
+        background-color: rgba(55, 133, 201, 0.571);
+        border-bottom: #848484c2 solid 4px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 720px) {
+    section {
+        background-color: rgba(201, 138, 55, 0.571);
+        border-bottom: #848484c2 solid 4px;
+    }
+
+    nav input:not(:checked)~label span:first-child {
+        display: none;
+    }
+    nav ul {
+        display: inline-block;
+        height: 120px;
+        width: 400px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    section {
+        background-color: rgba(61, 132, 152, 0.737);
+        border-bottom: #848484c2 solid 4px;
+    }
+    nav input:not(:checked)~label span:first-child {
+        display: none;
+    }
+    nav ul {
+        display: inline-block;
+        height: 120px;
+        width: 400px;
+    }
+
 
 }
